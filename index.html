@@ -23,15 +23,17 @@
             </div>
           <div class="rec-secundario container-fluid">
             <div class="dexter">
-                <img src="dexter1.png" alt="Dexter inicial" />
+                <img id="imagenDexter" src="dexter1.png" alt="Dexter inicial" />
               </div>
               <form class="form-principal container-fluid">
                 <input type="text" class="texto-numero" placeholder="Ingrese un numero entre 1 y 100"/>
-                <input type="button" class="btn-adivinar" value="Adivinar" />
+                <input type="button" class="btn btn-adivinar" value="Adivinar" />
+                <input type="button" class="btn btn-volver ocultar" value="Volver a jugar" />
               </form>
           </div>
           <div class="intentos container-fluid">
-            <h3>Intentos restantes</h3>
+            <h4 id="guia"></h4>
+            <h3 id="intentosRestantes"></h3>
           </div>
         </div>
       </div>
@@ -47,4 +49,5 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"
   ></script>
+  <script src="index.js"></script>
 </html>
