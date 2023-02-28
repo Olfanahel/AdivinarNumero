@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.ocultar{
+    display: none;
+}
+
+.contenedor-principal{
+    display: flex;
+    padding: 0;
+    background-image: url(laboratorio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.rec-principal{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-radius: 5rem;
+    background-color: rgba(87,163,190,0.7);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    .titulos{
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: -3rem;
+        h1,h3{
+            width: 100%;
+        }
+    }
+    .rec-secundario{
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .dexter{
+            height: 6rem;
+            width: 6rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .form-principal{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .texto-numero{
+                width: 90%;
+                margin-bottom: 2rem;
+                border: none;
+                border-bottom: 5px solid black;
+                background: none;
+                color: black;
+                outline: none;
+            }
+            .texto-numero::placeholder{
+                color: black;
+            }
+            .btn{
+                width: 7rem;
+                height: 3rem;
+                border-radius: 10%;
+                letter-spacing: 0.1rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: #2469A3;
+                border: none;
+                border-left: 5px solid black;
+                border-bottom: 5px solid black;
+            }
+            .btn-adivinar:focus{
+                background-color: #17466D;
+            }
+            .btn-volver{
+                width: 9rem;
+            }
+        }
+    }
+    .intentos{
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px){
+    .rec-principal{
+        .rec-secundario{
+            flex-direction: row;
+            justify-content: center;
+            .dexter{
+                width: 10rem;
+                margin: auto;
+                img{
+                    width: 10rem;
+                    height: 10rem;
+                }
+            }
+            .form-principal{
+                flex-direction: column;
+                width: 45%;
+                .texto-numero{
+                    width: 100%;
+                    text-align: center;
+                }
+                .btn{
+                    align-self: center;
+                }
+            }
+        }
+    }
+} 
