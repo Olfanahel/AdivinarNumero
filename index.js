@@ -29,13 +29,13 @@ boton.addEventListener('click',e=>{
         guia.classList.toggle("ocultar");
         intentosTexto.innerHTML = `Correcto el numero era ${numeroAleatorio}`;
     }
-    if(intentos < 10){
+    if(intentos < 10 && numeroAleatorio != numeroPantalla){
         dexter.src = 'dexter2.png';
     }
-    if(intentos < 3){
+    if(intentos < 3 && numeroAleatorio !=  numeroPantalla){
         dexter.src = 'dexter3.png';
     }
-    if(intentos === 0){
+    if(intentos === 0 && numeroAleatorio != numeroPantalla){
         dexter.src = 'dexter-perder.png';
         boton.classList.toggle("ocultar");
         botonVolver.classList.toggle("ocultar");
