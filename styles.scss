@@ -96,3 +96,31 @@ body{
         text-align: center;
     }
 }
+
+@media (min-width: 1024px){
+    .rec-principal{
+        .rec-secundario{
+            flex-direction: row;
+            justify-content: center;
+            .dexter{
+                width: 10rem;
+                margin: auto;
+                img{
+                    width: 10rem;
+                    height: 10rem;
+                }
+            }
+            .form-principal{
+                flex-direction: column;
+                width: 45%;
+                .texto-numero{
+                    width: 100%;
+                    text-align: center;
+                }
+                .btn{
+                    align-self: center;
+                }
+            }
+        }
+    }
+} 

@@ -98,4 +98,30 @@ body {
 }
 .rec-principal .intentos {
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .rec-principal .rec-secundario {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .rec-principal .rec-secundario .dexter {
+    width: 10rem;
+    margin: auto;
+  }
+  .rec-principal .rec-secundario .dexter img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .rec-principal .rec-secundario .form-principal {
+    flex-direction: column;
+    width: 45%;
+  }
+  .rec-principal .rec-secundario .form-principal .texto-numero {
+    width: 100%;
+    text-align: center;
+  }
+  .rec-principal .rec-secundario .form-principal .btn {
+    align-self: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

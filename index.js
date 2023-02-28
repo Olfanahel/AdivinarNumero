@@ -36,7 +36,11 @@ boton.addEventListener('click',e=>{
         dexter.src = 'dexter3.png';
     }
     if(intentos === 0){
-        dexter.src = 'dexter-perder.png'
+        dexter.src = 'dexter-perder.png';
+        boton.classList.toggle("ocultar");
+        botonVolver.classList.toggle("ocultar");
+        guia.classList.toggle("ocultar");
+        intentosTexto.innerHTML = `No te rindas aun puedes volver a jugar!`;
     }
 })
 
