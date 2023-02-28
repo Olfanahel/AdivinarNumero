@@ -6,8 +6,8 @@ let intentosTexto = document.getElementById("intentosRestantes");
 let dexter = document.getElementById("imagenDexter");
 
 
-let numeroAleatorio = parseInt(Math.random()*100);
-let intentos = 3;
+let numeroAleatorio = parseInt(Math.random()*50);
+let intentos = 10;
 
 let numeroPantalla;
 console.log(numeroAleatorio);
@@ -29,17 +29,17 @@ boton.addEventListener('click',e=>{
         guia.classList.toggle("ocultar");
         intentosTexto.innerHTML = `Correcto el numero era ${numeroAleatorio}`;
     }
-    if(intentos === 2){
+    if(intentos < 10){
         dexter.src = 'dexter2.png';
     }
-    if(intentos === 1){
+    if(intentos < 3){
         dexter.src = 'dexter3.png';
     }
     if(intentos === 0){
         dexter.src = 'dexter-perder.png';
         boton.classList.toggle("ocultar");
         botonVolver.classList.toggle("ocultar");
-        guia.classList.toggle("ocultar");
+        guia.innerHTML = `El numero era ${numeroAleatorio}`;
         intentosTexto.innerHTML = `No te rindas aun puedes volver a jugar!`;
     }
 })
